@@ -8,6 +8,11 @@ public class Callee {
 
    private void innerMethod(final String message) {
       System.out.println("Message: " + message);
+      try {
+         Thread.sleep(30);
+      } catch (InterruptedException e) {
+         throw new RuntimeException(e);
+      }
    }
 
 }
