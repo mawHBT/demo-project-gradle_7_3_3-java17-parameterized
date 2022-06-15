@@ -1,6 +1,6 @@
 package demo.project.gradle;
 
-import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertNull;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -15,7 +15,7 @@ public class ExampleTest {
    public void test(final String message) {
       final ExampleClass exampleClazz = new ExampleClass();
       exampleClazz.calleeMethod(message);
-      assertNotNull(exampleClazz);
+      assertNull(exampleClazz);
    }
 
 }
