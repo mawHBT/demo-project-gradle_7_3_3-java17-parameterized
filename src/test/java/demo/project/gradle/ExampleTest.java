@@ -12,7 +12,7 @@ public class ExampleTest {
    @DisplayName("Should pass a non-null message to our test method")
    @ParameterizedTest(name = "index: {index}, message: {0}")
    @ValueSource(strings = { "Hello", "World" })
-   public void test(final String message) {
+   public void test(final int message) {
       final ExampleClass exampleClazz = new ExampleClass();
       exampleClazz.calleeMethod(message);
       assertNotNull(exampleClazz);
