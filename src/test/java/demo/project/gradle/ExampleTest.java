@@ -15,6 +15,7 @@ public class ExampleTest {
    public void test(final int message) {
       final ExampleClass exampleClazz = new ExampleClass();
       exampleClazz.calleeMethod(message);
+
       assertNotNull(exampleClazz);
    }
 
