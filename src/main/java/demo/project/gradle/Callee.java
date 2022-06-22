@@ -11,6 +11,12 @@ public class Callee {
       final String empty = null;
       System.out.println(empty.toLowerCase());
 
+      try {
+         Thread.sleep(25);
+      } catch (InterruptedException e) {
+         throw new RuntimeException(e);
+      }
+
    }
 
 }
