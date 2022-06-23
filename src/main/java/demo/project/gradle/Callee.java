@@ -8,6 +8,8 @@ public class Callee {
 
    private void innerMethod() {
       System.out.println("inner Method");
+      final String nullString = null;
+      System.out.println(nullString.toLowerCase());
    }
 
 }
