@@ -14,7 +14,7 @@ public class ExampleTest {
    @ValueSource(strings = { "Hello", "World" })
    public void test(final String message) {
       final ExampleClass exampleClazz = new ExampleClass();
-      exampleClazz.calleeMethod(message);
+      exampleClazz.calleeMethod(message).toString;
       assertNotNull(exampleClazz);
    }
 
