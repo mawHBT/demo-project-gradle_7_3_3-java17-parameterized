@@ -9,7 +9,7 @@ public class ExampleTest {
    @Test
    public void test() {
       final ExampleClass exampleClazz = new ExampleClass();
-      exampleClazz.calleeMethod();
+      exampleClazz.calleeMethod().toString();
       assertNull(exampleClazz);
    }
 
